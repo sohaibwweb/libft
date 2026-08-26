@@ -24,15 +24,15 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	if (n == i)
 	{
-		return 0;
+		return (0);
 	}
 	return (x[i] - y[i]);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 int		main(void)
 {
 	char	x[] = "abc";
 	char	y[] = "bbc";
 
 	printf("%d\n", ft_memcmp(x, y, 0));
-}
+}*/

@@ -14,7 +14,7 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		if (s[i] == c)
 		{
@@ -28,13 +28,13 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 int		main(void)
 {
 	char	str[] = "sohaib";
 	char	*result;
 
-	result = ft_strchr(str, '\0');
+	result = ft_strchr(str, 'h');
 	printf("Found = %c\n", *result);
 	printf("Found = %s\n", result);
-}
+}*/

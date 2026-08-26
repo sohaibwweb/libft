@@ -13,32 +13,28 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t			i;
 	size_t			j;
-	unsigned char	*a;
-	unsigned char   *b;
 
-	a = (unsigned char *)little;
-	b = (unsigned char *)big;
 	i = 0;
 	while (i < len)
 	{
 		j = 0;
-		while (a[j] && b[i + j] == a[j])
+		while (little[j] && big[i + j] == little[j])
 		{
-			if (b[i + j] == '\0')
+			if (big[i + j] == '\0')
 			{
 				return (NULL);
 			}
 			j++;
 		}
-		if (!a[j])
+		if (!little[j])
 		{
-			return ((char *)&b[i]);
+			return ((char *)&big[i]);
 		}
 		i++;
 	}
 	return (NULL);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 int		main()
 {
 	char	big[] = "Hi my name is Sohaib Ashraf Abu Msameh";
@@ -51,5 +47,4 @@ int		main()
 		return 0;
 	}
 	printf("%s\n", r);
-}
-
+}*/
