@@ -50,13 +50,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (ft_substr(s1, start, (end - start)));
 }
-int		main()
+/*int		main()
 {
 	char	*result;
 
 	result = ft_strtrim("Xsohaib", "sohaib");
 	printf("%s\n", result);
-}
+}*/
 /*30  size_t    count;
 
 37  count = ft_strlen(s1);

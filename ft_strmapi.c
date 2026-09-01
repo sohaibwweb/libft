@@ -44,11 +44,11 @@ char	ft_upper(unsigned int i, char c)
 	return (c);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	s[] = "SOHAIB";
 	char	*result;
 
 	result = ft_strmapi(s, ft_upper);
 	printf("%s", result);
-}
+}*/
