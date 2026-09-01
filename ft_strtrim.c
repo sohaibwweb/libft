@@ -44,19 +44,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 		}
 		i++;
 	}
-	if (start >= count)
+	if (start >= i)
 	{
 		return (ft_start_count());
 	}
-	return (ft_substr(s1, start, (count - start)));
+	return (ft_substr(s1, start, (end - start)));
 }
-/*int		main()
+int		main()
 {
 	char	*result;
 
-	result = ft_strtrim("XsohaibC", "XC");
+	result = ft_strtrim("Xsohaib", "sohaib");
 	printf("%s\n", result);
-}*/
+}
 /*30  size_t    count;
 
 37  count = ft_strlen(s1);
