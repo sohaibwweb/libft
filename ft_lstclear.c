@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*   FILE_NAME.c                                      ███████╗███████╗        */
+/*   ft_lstclear.c                                    ███████╗███████╗        */
 /*   By: sohaib <sohaib@student.com>                  ██╔════╝██╔════╝        */
-/*   Created: 2026/07/25 18:04:14 by sohaib           ███████╗█████╗          */
-/*   Updated: 2026/07/25 18:04:14 by sohaib           ╚════██║██╔══╝          */
+/*   Created: 2026/09/13 13:16:40 by sohaib           ███████╗█████╗          */
+/*   Updated: 2026/09/13 13:16:40 by sohaib           ╚════██║██╔══╝          */
 /*                                                    ███████║██║             */
 /*                                                    ╚══════╝╚═╝             */
 /* ************************************************************************** */
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	unsigned char	*ptr;
-	size_t			i;
+	t_list	*far;
 
-	ptr = s;
-	i = 0;
-	while (i < n)
+	while (*lst != NULL)
 	{
-		ptr[i++] = (unsigned char)c;
+		far = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = far;
 	}
-	return (ptr);
 }

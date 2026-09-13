@@ -7,9 +7,7 @@
 /*                                                    ███████║██║             */
 /*                                                    ╚══════╝╚═╝             */
 /* ************************************************************************** */
-#include <stddef.h>
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t n, size_t size)
 {
@@ -23,7 +21,6 @@ void	*ft_calloc(size_t n, size_t size)
 	ft_bzero(ptr, n * size);
 	return (ptr);
 }
-/*#include <stdio.h>
 int		main()
 {
 	size_t	n = 3;
@@ -37,4 +34,4 @@ int		main()
         printf("%d\n", r[i]);
         i++;
     }
-}*/
+}

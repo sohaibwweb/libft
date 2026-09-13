@@ -1,4 +1,3 @@
-/* ************************************************************************** */
 /*                                                                            */
 /*   FILE_NAME.c                                      ███████╗███████╗        */
 /*   By: sohaib <sohaib@student.com>                  ██╔════╝██╔════╝        */
@@ -11,18 +10,18 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t				i;
-	const unsigned char	*a;
-	unsigned char		*b;
+	size_t		i;
+	const char	*s;
+	char		*d;
 
 	i = 0;
-	a = src;
-	b = dest;
-	if (b > a)
+	s = src;
+	d = dest;
+	if (d > s)
 	{
 		while (i < n)
 		{
-			b[n - 1 - i] = a[n - 1 - i];
+			d[n - 1 - i] = s[n - 1 - i];
 			i++;
 		}
 	}
@@ -30,11 +29,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		while (i < n)
 		{
-			b[i] = a[i];
+			d[i] = s[i];
 			i++;
 		}
 	}
-	return (b);
+	return (d);
 }
 /*#include <stdio.h>
 int		main(void)
