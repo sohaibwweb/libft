@@ -125,5 +125,5 @@ Each node (t_list) stores a content (a generic pointer, so it can hold any type 
 | ft_lstdelone | Frees a single node and its content |
 | ft_lstclear | Frees a list and all its content |
 | ft_lstiter | Applies a function to the content of each node of a list |
-| ft_lstmap | Creates a new list by applying a function to the content of each node of a list |
-Each node (t_list) stores a content (a generic pointer, so it can hold any type of data) and a pointer next to the following node in the list, or NULL
+| ft_lstmap | Creates a new list by applying a function to the content of each node of a list
+Each node (t_list) stores a content (a generic pointer, so it can hold any type of data) and a pointer next to the following node in the list, or NULL |
