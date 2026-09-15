@@ -11,7 +11,7 @@ This project is a first step toward understanding how standard functions work in
 The library is organized into three parts:
 - **Part 1**: re-implementation of standard libc functions (ctype.h, string.h, stdlib.h).
 - **Part 2**: additional string-related functions (creation, manipulation, and printing utilities).
-- **Part 3 (Bonus)**: functions to create and manipulate chained lists (linked lists).
+- **Part 3**: functions to create and manipulate chained lists (linked lists).
 
 ## Instructions
 
@@ -54,7 +54,7 @@ AI (Claude) was used exclusively as a support tool, not to write the mandatory o
 - Getting deeper explanations on some specific details while implementing the functions.
 - Helping structure and draft this README.md file according to the required format.
 
-All the functions of the library (Part 1, Part 2, and the bonus linked list part) were implemented and understood by me.
+All the functions of the library (Part 1, Part 2, and the linked list part) were implemented and understood by me.
 
 ## Library Description
 
@@ -102,7 +102,7 @@ All the functions of the library (Part 1, Part 2, and the bonus linked list part
 | ft_putendl_fd | Writes a string followed by a newline to a given file descriptor |
 | ft_putnbr_fd | Writes an integer to a given file descriptor |
 
-### Part 3 — Bonus (linked lists)
+### Part 3 — linked lists
 
 | Function | Description |
 |---|---|
