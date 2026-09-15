@@ -35,11 +35,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (d);
 }
-/*#include <stdio.h>
+#include <stdio.h>
 int		main(void)
 {
-	char	a[] = "sohaib";
+	char	a[9] = "sohaib";
 
-	ft_memmove(a + 2, a, 4);
+	ft_memmove(a + 2, a, 6);
+	a[8] = '\0';
 	printf("%s", a);
-}*/
+}

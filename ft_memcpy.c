@@ -25,7 +25,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (b);
 }
-/*#include <stdio.h>
+#include <stdio.h>
 int		main(void)
 {
 	char	a[] = "sohaib";
@@ -33,4 +33,4 @@ int		main(void)
 
 	ft_memcpy(b, a, 6);
 	printf("%s", b);
-}*/
+}

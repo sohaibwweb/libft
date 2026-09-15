@@ -11,14 +11,20 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*ptr;
+	unsigned char	*str;
 	size_t			i;
 
-	ptr = s;
+	str = s;
 	i = 0;
 	while (i < n)
-	{
-		ptr[i++] = (unsigned char)c;
-	}
-	return (ptr);
+		str[i++] = (unsigned char)c;
+	return (str);
+}
+int	main()
+{
+	char s[] = "shohaib";
+	char *result;
+	s[3] = '\0';
+
+	result = ft_memset(s, 65, 2);
 }
