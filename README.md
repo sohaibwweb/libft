@@ -104,17 +104,6 @@ All the functions of the library (Part 1, Part 2, and the linked list part) were
 
 ### Part 3 — linked lists
 
-This part implements a singly linked list, using the following structure:
-
-c
-typedef struct s_list
-{
-    void            *content;
-    struct s_list   *next;
-}   t_list;
-
-Each node (t_list) stores a content (a generic pointer, so it can hold any type of data) and a pointer next to the following node in the list, or NULL if it is the last node. The functions below allow creating, adding, counting, iterating, and freeing nodes of this list
-
 | Function | Description |
 |---|---|
 | ft_lstnew | Creates a new list node |
@@ -126,4 +115,4 @@ Each node (t_list) stores a content (a generic pointer, so it can hold any type 
 | ft_lstclear | Frees a list and all its content |
 | ft_lstiter | Applies a function to the content of each node of a list |
 | ft_lstmap | Creates a new list by applying a function to the content of each node of a list
-Each node (t_list) stores a content (a generic pointer, so it can hold any type of data) and a pointer next to the following node in the list, or NULL |
+            | Each node (t_list) stores a content (a generic pointer, so it can hold any type of data) and a pointer next to the following node in the list, or NULL |
